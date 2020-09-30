@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- reference the font info in the style.css using 'link'. the './' looks in your folder for options-->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- tells you the type  -->
+    <script
+      type="text/javascript"
+      src="https://public.tableau.com/javascripts/api/tableau-2.min.js"
+    ></script>
+    <title>DS 15 Embedding</title>
+  </head>
+  <body>
+    <h1>📊Ruth's Embedding Test Webpage🕵️‍♂️📉📈</h1>
+    <!-- wrapping the buttons in a 'div', divides it inot its own elements -->
+    <div id="showhidebuttons">
+      <button id="hideViz">Hide Viz</button>
+      <button id="showViz">Show Viz</button>
+    </div>
+    <hr />
+    <div id="filterbuttons">
+      <button class="filter" value="Central">Central</button>
+      <button class="filter" value="North">North</button>
+      <button class="filter" value="South">South</button>
+      <button id="revertBtn">All</button>
+    </div>
+    <hr />
+    <!-- create an iframe to put the block in. viz container is referenced in the style.css -->
+    <div id="vizcontainer">Container title if needed</div>
+    <!-- create a link to the java script. choose the order based on the order of referecne. eg java reference style so comes after -->
+    <script src="./app.js"></script>
+  </body>
+</html>
